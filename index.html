@@ -18,7 +18,7 @@
 
     <!-- Font Awesome 5 -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
-    integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
     <!-- Favicon -->
     <link type="image/x-icon" rel="shortcut icon" href="img/favicon/favicon.ico">
@@ -31,9 +31,14 @@
 
     <!-- Css -->
     <link rel="stylesheet" href="css/index.css">
+
+    <!-- Owl-Carousel -->
+    <link rel="stylesheet" href="./css/owl.carousel.min.css">
+    <link rel="stylesheet" href="./css/owl.theme.default.min.css">
 </head>
 
 <body>
+    <!-- Header -->
     <header class="header">
         <div class="container">
             <div class="header__body">
@@ -59,17 +64,74 @@
             </div>
         </div>
     </header>
-    <main>
-        <div class="container">
 
-        </div>
+    <!-- Main -->
+    <main class="main">
+        <section class="section__counterup">
+            <div class="container">
+                <div class="counter__wrapper">
+                    <div class="single-counter">
+                        <p>Більше</p>
+                        <span class="counter">20</span>
+                        <p>років на ринку праці</p>
+                    </div>
+                    <div class="single-counter">
+                        <p>Понад</p>
+                        <span class="counter">100000</span>
+                        <p>задоволених клієнтів</p>
+                    </div>
+                    <div class="single-counter">
+                        <p>Гарантія до</p>
+                        <span class="counter">3</span>
+                        <p>років на всі інструмети</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="slide__carousel__top">
+            <div class="wrapper__slide__carousel__top">
+                <div class="slide-carousel-top owl-carousel owl-theme">
+                    <div class="single-slide">
+                        <img src="" alt="">1
+                    </div>
+                    <div class="single-slide">
+                        <img src="" alt="">2
+                    </div>
+                    <div class="single-slide">
+                        <img src="" alt="">3
+                    </div>
+                    <div class="single-slide">
+                        <img src="" alt="">4
+                    </div>
+                    <div class="single-slide">
+                        <img src="" alt="">5
+                    </div>
+                </div>
+        </section>
+
     </main>
 
 
 
 
 
+    <!-- ==== JQuery  js file==== -->
+    <script src="./js/jquery.js"></script>
+
+    <!-- ==== JQuery Waypoint js file==== -->
+    <script src="./js/waypoint.min.js"></script>
+
+    <!-- ==== Owl Carousel js file==== -->
+    <script src="./js/owl.carousel.min.js"></script>
+
+    <!-- ====Counter js file=== -->
+    <script src="./js/jquery.counterup.min.js"></script>
+
+    <!-- ==== Custom js file==== -->
     <script src="./js/index.js"></script>
+    
 </body>
 
 </html>
