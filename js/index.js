@@ -2,7 +2,6 @@
 $(document).ready(function () {
     $(".slide-carousel-top").owlCarousel({
         loop: true,
-        margin: 10,
         nav: false,
         dots: false,
         autoplay: true,
