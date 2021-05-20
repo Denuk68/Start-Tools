@@ -2,33 +2,32 @@
 $(document).ready(function () {
     $(".slide-carousel-top").owlCarousel({
         loop: true,
-        margin: 20,
+        margin: 10,
         nav: false,
         dots: false,
         autoplay: true,
-        autoplayTimeout: 4000,
+        autoplayTimeout: 5000,
         autoplaySpeed: 3000,
         responsive: {
             0: {
                 items: 1,
             },
             500: {
-                items: 3,
+                items: 1,
             },
             768: {
-                items: 4,
+                items: 2,
             },
             992: {
-                items: 5,
+                items: 2,
             },
         },
     });
 });
-
 // Сounter
 $(document).ready(function () {
     $(".counter").counterUp({
       delay: 15,
-      time: 1200,
+      time: 1500,
     });
   });
