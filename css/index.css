@@ -116,6 +116,9 @@ table {
   color: #585252;
   text-align: center;
 }
+.section__info .info p{
+  padding: 0;
+}
 .section__info  p span{
   color: #c71419;
 }
@@ -125,11 +128,13 @@ table {
 }
 .section__info .info .left, .right{
   padding: 20px; 
-  margin: 10px 50px;
   background-color: #e0e8ef;
   box-shadow: 0 13px 30px rgba(0, 0, 0, 0.2);
   cursor: pointer;
   transition: box-shadow linear 0.2s;
+}
+.section__info .wrapper{
+  width: 500px;  
 }
 .section__info .info .left:hover, .right:hover{
   box-shadow: 0 13px 30px rgba(0, 0, 0, 0.6);
@@ -195,7 +200,7 @@ table {
 .section__counterup .single-counter p{
   color: #585252;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 20px;
 }
 
 /* Footer */
@@ -221,6 +226,10 @@ table {
     .container {
       max-width: 970px;
     }
+    /* Main */
+    .section__info .wrapper{
+      width: 400px;  
+    }
   }
 
   @media (max-width: 992px) {
@@ -232,12 +241,20 @@ table {
       font-size: 17px;
     }
     /* Main */
+    .section__info .wrapper{
+      width: 300px;  
+    }
     .section__counterup .single-counter .counter{
       font-size: 23px;
     }
     .section__counterup .single-counter p{
       font-size: 17px;
     }
+    /* Footer */
+    .footer h2{
+      font-size: 17px;
+    }
+    
   }
 
   @media (max-width: 767px) {
@@ -265,13 +282,40 @@ table {
       margin-top: 3px;
     }
     /* Main */
-     .section__counterup .single-counter .counter{
+    .section__info .info{
+      flex-direction: column;
+    }    
+    .section__info  .info .left,.right{
+      margin-bottom: 20px;
+    }
+    .section__info h1 {
+      font-size: 17px;
+    }    
+    .section__info p{
+      font-size: 17px;
+      padding: 10px  0  30px 0;
+    }
+    .section__info .info p {
+      font-size: 15px;
+    }    
+    .section__info .wrapper{
+      width: 100%;  
+    }
+    .section__counterup .single-counter .counter{
       font-size: 20px;
     }
     .section__counterup .single-counter p{
-      font-size: 16px;
+      font-size: 17px;
     }
-    
+    .section__map__address h1 {
+      font-size: 17px;
+      padding: 20px 0;
+    }
+    /* Footer */
+    .footer h2{
+      padding: 20px 0;
+      font-size: 17px;
+    }
 }
     
   @media (max-width: 575px) {
@@ -290,7 +334,14 @@ table {
     .header__contact ul li:last-child{
       display: none;
     }
-    /* Main */    
+    /* Main */   
+    .section__info p{
+      font-size: 17px;
+      padding: 0 0 20px 0;
+    } 
+    .section__info h1 {
+      padding: 20px 0;
+    }
     .section__counterup{ 
       padding: 15px 0;
     }
@@ -304,7 +355,10 @@ table {
     .section__counterup .single-counter .counter{
       font-size: 21px;
     }
-    
+    /* Footer */
+    .footer h2{
+      font-size: 15px;
+    }   
 
 
   }
